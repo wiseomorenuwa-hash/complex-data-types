@@ -300,6 +300,7 @@ let ticTacToeArray = generateRandomTicTacToe()
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
 let ticTacToeWinner = ticTacToeArray[0][0] == ticTacToeArray[1][1] && ticTacToeArray[0][0] == ticTacToeArray[2][2] && ticTacToeArray[0][0]!== ""
+
 ////////////////////////////////////////////////////////////////////////
 
 
@@ -310,7 +311,7 @@ let ticTacToeWinner = ticTacToeArray[0][0] == ticTacToeArray[1][1] && ticTacToeA
 
 ////////////////////////////////////////////////////////////////////////
 //
-//															 ANSWERS
+//											 ANSWERS
 //
 //	DO NOT LOOK AT THIS SECTION UNTIL YOU HAVE FINISHED THE EXERCISES
 //

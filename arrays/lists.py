@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = ['apple','ball','orange','potatoe']
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list1.copy()
+listCopy.append(appendElement)
 
 ########################################################################
 
@@ -55,7 +56,8 @@ cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+cycleMe.append(cycleMe.pop(0))
+cycleMe.append(cycleMe.pop(0))
 
 ########################################################################
 
@@ -74,7 +76,8 @@ keepMe = clearJustMe
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearJustMe = []
+clearJustMe.clear
 
 ########################################################################
 
@@ -93,7 +96,7 @@ loseMe = clearAll
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearAll.clear()
 
 ########################################################################
 
@@ -111,7 +114,8 @@ allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-top3Scores = None
+scores = sorted(allScores, reverse=True)
+top3Scores = scores[:3]
 
 ########################################################################
 
