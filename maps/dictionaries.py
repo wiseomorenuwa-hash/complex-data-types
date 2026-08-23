@@ -10,7 +10,9 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newDict = None
+newDict = {
+	"key": "value"
+}
 
 ########################################################################
 
@@ -41,10 +43,15 @@ getMyAge = {
 import datetime
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
+dateofbirth = datetime.datetime(getMyAge["DOB"]["year"], getMyAge["DOB"]["month"], getMyAge["DOB"]["day"])
 
-ageInDays = None
-ageInMonths = None
-ageInYears = None
+currentdate = datetime.datetime.now()
+
+delta = currentdate - dateofbirth
+
+ageInDays = delta.days
+ageInMonths = delta.days / 12
+ageInYears = delta.days / 365
 
 ########################################################################
 
@@ -77,7 +84,10 @@ import copy
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-deepDictionaryCopy = None
+
+deepDictionaryCopy = copy.deepcopy(deepDictionary)
+deepDictionaryCopy["name"] = "Kravis Lott"
+deepDictionaryCopy["siblings"].pop()
 
 ########################################################################
 
@@ -113,7 +123,10 @@ studentCopy = dict(student)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+student["grade"] += 1
+student["gpa"] -= 0.15
+student["courses"].append({"subject": "MATH", "level": 204})
+student["absences"] = 1
 
 ########################################################################
 
